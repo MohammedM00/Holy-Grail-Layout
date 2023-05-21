@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+
+    <style>
+        header {
+            width: 90%;
+            height: 100px;
+            background-color: rgba(154, 154, 218, 0.995);
+            border: 3px solid green;
+            padding: 10px;
+            margin: 25px;
+        }
+
+        nav {
+            position: fixed;
+            width: 90%;
+            height: 50px;
+            background-color: rgb(48, 189, 199);
+            top: 170px;
+            left: 35px;
+        }
+
+        article {
+            width: 65%;
+            height: 200px;
+            background-color: rgb(212, 90, 90);
+            border: 5px solid rgb(128, 128, 128);
+            position: relative;
+            top: 15px;
+        }
+
+        aside {
+            width: 40%;
+            height: 420px;
+            background-color: rgb(240, 149, 186);
+            position: absolute;
+            left: 50%;
+            right: 10%;
+            top: 235px;
+        }
+
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(230, 230, 97);
+            position: fixed;
+            bottom: 0px;
+        }
+
+        .articles {
+            position: relative;
+            left: 30px;
+            top: 45px;
+            width: 65%;
+            height: 70%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>The header does not have any position applied, therefore asume the default which is static.</header>
+    <nav>The nav has a fixed position it means the nav bar is static in browser window. It is positon is 170px below from top
+        and 35px left from browser window.</nav>
+
+    <div>
+        <div class="articles">
+            <article>The article has a relative position. It start from where the element would be if it were still in
+                the normal flow.
+                It is 15px below from where it should be initialy.
+                It's height is 200px and width is 65px.
+            </article>
+            <article>The article has a relative position. It start from where the element would be if it were still in
+                the normal flow.
+                It is 15px below from where it should be initialy.
+                It's height is 200px and width is 65px.</article>
+        </div>
+        <aside>The article has an absolute position. It starts from relative positon of its parent element.
+            It is 235px below from top.
+            It is 10px left from right and 50px right from left.
+            It's height is 420px and width is 40px.</aside>
+    </div>
+    <footer>The footer element has a fixed position. It is 0px up from bottom.
+        It's height is 50px and width is 100px.
+    </footer>
+</body>
+
+</html>
